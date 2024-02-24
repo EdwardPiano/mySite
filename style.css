@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  background-color: rgb(255, 246, 233);
   color: #24292e;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -80,6 +81,7 @@ li {
 
 #header ul li img.icon {
   width: 70px;
+  margin-top: 7px;
 }
 
 /* Main */
