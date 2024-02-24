@@ -27,7 +27,7 @@ li {
 
 .wrapper {
   max-width: 960px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 130px auto;
   font-size: 0.9rem;
   padding: 4%;
 }
@@ -84,7 +84,7 @@ li {
 
 /* Main */
 #main {
-  margin-bottom: 60px;
+  margin-bottom: 130px;
 }
 
 #main img {
@@ -95,6 +95,13 @@ li {
 }
 
 /* About */
+#about p {
+  margin-bottom: 3px;
+}
+#about p:first-of-type {
+  font-weight: bold;
+}
+
 #about ul {
   margin-bottom: 16px;
 }
@@ -104,8 +111,11 @@ li {
 }
 
 #about ul li:first-child {
-  font-weight: 600;
+  font-weight: bold;
   margin-bottom: 20px;
+}
+#about ul li span {
+  font-weight: normal;
 }
 
 /* Works */
@@ -118,10 +128,14 @@ li {
 
 #works ul li {
   width: 31%;
+  height: auto;
   margin-bottom: 23px;
 }
 
 #works ul li img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   transition: all 0.3s;
 }
 
