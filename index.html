@@ -24,8 +24,8 @@
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#news">News</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
             <a
@@ -43,7 +43,7 @@
     <!-- Main -->
     <div id="main">
       <picture>
-        <img src="./img/mainPic.jpeg" alt="" />
+        <img src="./img/main.avif" alt="main.avif" />
       </picture>
     </div>
 
@@ -77,9 +77,9 @@
       </p>
     </section>
 
-    <!--Works-->
-    <section id="works" class="wrapper">
-      <h2 class="sec-title">Works</h2>
+    <!--Project-->
+    <section id="project" class="wrapper">
+      <h2 class="sec-title">Project</h2>
       <ul>
         <li>
           <a
@@ -128,6 +128,58 @@
         </li>
         <li><img src="./img/react.png" alt="react" /></li>
       </ul>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="wrapper">
+      <h2 class="sec-title">Experience</h2>
+      <dl>
+        <dt>2020年11月 ～ 現在</dt>
+        <dd>サイボウズ台灣支店(Cybozu Taiwan) 職種 : SE</dd>
+        <dt>22020年4月 ～ 2020年10月 (0.5 年)</dt>
+        <dd>ホンダドリーム(Honda Dream) 職種 : バイク整備士</dd>
+        <dt>2019年2月 ～ 2020年2月 (1 年)</dt>
+        <dd>
+          夢テクノロジー(Yume Technology Co., Ltd. ) 職種 :
+          ソフトウェアエンジニア
+        </dd>
+        <dt>2017年9月 ～ 2019年1月 (1.4 年)</dt>
+        <dd>鼎新電腦(Digiwin Software) 職種 : ソフトウェアエンジニア</dd>
+        <dt>2013年9月 ～ 2017年6月 (卒業)</dt>
+        <dd>
+          亞東科技大學 情報管理学科 <br />(Asia Eastern University of Science
+          and Technology)
+        </dd>
+      </dl>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="wrapper">
+      <h2 class="sec-title">Contact</h2>
+      <p>お問い合わせは以下のフォームから</p>
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <input
+          type="hidden"
+          name="accessKey"
+          value="1c048353-c3d9-4efe-908a-ebe920175e13"
+        />
+        <dl>
+          <dt><label for="name">お名前</label></dt>
+          <dd><input name="name" type="text" id="name" /></dd>
+          <dt><label for="email">メールアドレス</label></dt>
+          <dd><input name="email" type="email" id="email" required /></dd>
+          <dt><label for="content">内容</label></dt>
+          <dd>
+            <textarea
+              name="message"
+              id="content"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </dd>
+        </dl>
+        <div class="button"><input type="submit" value="送信" /></div>
+      </form>
     </section>
   </body>
 </html>
