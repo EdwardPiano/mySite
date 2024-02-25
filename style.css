@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-color: rgb(255, 246, 233);
+  background-color: #3c3c3c;
   color: #24292e;
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -27,7 +27,7 @@ li {
 }
 
 .wrapper {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto 180px auto;
   font-size: 0.9rem;
   padding: 4%;
@@ -39,23 +39,25 @@ li {
 }
 
 .site-title a {
-  color: #24292e;
+  color: azure;
 }
 
 .sec-title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 46px;
+  color: azure;
 }
 
 /* Header */
 #header {
-  max-width: 960px;
+  background-color: rgb(3, 1, 22);
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 4%;
+  padding: 0 6%;
   height: 130px;
 }
 
@@ -66,12 +68,12 @@ li {
 }
 
 #header ul li {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-left: 30px;
 }
 
 #header ul li a {
-  color: #24292e;
+  color: azure;
   transition: all 0.6s;
 }
 
@@ -79,8 +81,12 @@ li {
   opacity: 0.5;
 }
 
+#header h1 a span {
+  color: orange;
+}
+
 #header ul li img.icon {
-  width: 70px;
+  width: 90px;
   margin-top: 7px;
 }
 
@@ -96,28 +102,100 @@ li {
   object-fit: cover;
 }
 
-/* About */
-#about p {
-  margin-bottom: 3px;
-}
-#about p:first-of-type {
-  font-weight: bold;
+/* About me */
+#about {
+  background-color: #3c3c3c;
+  max-width: 100%;
 }
 
-#about ul {
-  margin-bottom: 16px;
+#about-main {
+  text-align: center;
 }
 
-#about ul li {
-  margin-bottom: 3px;
+#about-main img {
+  margin: 0px auto 13px auto;
+  width: 99px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid rgb(123, 121, 121);
 }
 
-#about ul li:first-child {
-  font-weight: bold;
-  margin-bottom: 20px;
+#about-text {
+  color: azure;
+  width: 100%;
 }
-#about ul li span {
-  font-weight: normal;
+
+#about-main h2 {
+  color: aliceblue;
+  margin-bottom: 13px;
+}
+
+/* Portfolio */
+#portfolio {
+  background-color: #2a2a28;
+  max-width: 100%;
+  width: 100%;
+  padding: 100px 0;
+}
+.title h2 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 39px;
+  margin: 30px auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.card {
+  height: 390px;
+  width: 365px;
+  background-color: rgb(116, 112, 106);
+  padding: 20px 35px;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card i {
+  color: rgb(144, 224, 91);
+  font-size: 50px;
+  margin: 25px 0;
+}
+
+.card h5 {
+  color: aliceblue;
+  font-size: 23px;
+  margin-bottom: 30px;
+}
+
+.card p {
+  color: azure;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 40px;
+  height: 86px;
+}
+
+.card .button {
+  border: 1px solid rgb(37, 37, 37);
+  background-color: rgb(37, 37, 37);
+  text-align: center;
+  border-radius: 16px;
+  padding: 10px 25px;
+  width: 230px;
+  color: rgb(255, 255, 255);
+  transition: all 0.4s;
+}
+
+.card .button:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(37, 37, 37);
 }
 
 /* Project */
@@ -149,36 +227,49 @@ li {
 }
 
 /* Experience */
+#experience {
+  background-color: #2a2a28;
+  max-width: 100%;
+  padding: 150px 130px;
+}
+
 #experience dl {
+  font-size: 1.2rem;
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid #3c3c3c;
+  border-top: 1px solid azure;
 }
 
 #experience dt {
+  color: aliceblue;
   width: 35%;
-  border-bottom: 1px solid #3c3c3c;
+  border-bottom: 1px solid azure;
   padding: 15px;
 }
 
 #experience dd {
+  color: aliceblue;
   width: 65%;
-  border-bottom: 1px solid #3c3c3c;
+  border-bottom: 1px solid azure;
   padding: 15px;
 }
 
 /* Contact */
+
 #contact p {
+  color: aliceblue;
   text-align: center;
   margin: 20px;
 }
 
 #contact dl {
+  color: aliceblue;
   display: flex;
   flex-wrap: wrap;
 }
 
 #contact dl dt {
+  color: aliceblue;
   width: 15%;
   margin-bottom: 10px;
 }
@@ -199,6 +290,7 @@ li {
   width: 100%;
   padding: 10px;
   border-radius: 6px;
+  color: aliceblue;
 }
 
 #contact dd textarea {
@@ -223,9 +315,14 @@ li {
 }
 
 /* smartPhone */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 960px) {
   .site-title {
-    margin-top: 20px;
+    font-size: 1.9rem;
+    margin: 40px 0 20px 0;
+  }
+
+  .sec-title {
+    font-size: 1.6rem;
   }
   /* header */
 
@@ -253,6 +350,16 @@ li {
   #main img {
     height: 300px;
     object-fit: cover;
+  }
+
+  #experience {
+    max-width: 100%;
+    padding: 130px 26px;
+  }
+
+  /* Portfolio  */
+  .title h2 {
+    font-size: 1.6rem;
   }
 
   /* Project */
@@ -292,5 +399,10 @@ li {
   #contact dl dd {
     width: 100%;
     margin-bottom: 16px;
+  }
+
+  /* Portfolio */
+  .box {
+    flex-direction: column;
   }
 }
