@@ -246,6 +246,15 @@ li {
     margin-top: 19px;
   }
 
+  /* Main */
+  #main {
+    margin-bottom: 90px;
+  }
+  #main img {
+    height: 300px;
+    object-fit: cover;
+  }
+
   /* Project */
   #project ul {
     align-items: center;
